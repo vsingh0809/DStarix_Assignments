@@ -51,7 +51,7 @@ def load_and_split_document(file_path):
 def build_or_load_vectorstore(api_key):
     """Creates embeddings and persists vector store using ChromaDB."""
     embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/text-embedding-003",
+        model="models/gemini-embedding-001",
         google_api_key=api_key
     )
 
@@ -78,7 +78,7 @@ def create_rag_chain(vectorstore, api_key):
     llm = ChatGoogleGenerativeAI(
         model="gemini-2.5-flash",
         google_api_key=api_key,
-        temperature=0.2  # Low temperature for factual, document-bound accuracy
+        temperature=0  # Low temperature for factual, document-bound accuracy
     )
 
     # Retriever configuration using similarity search
