@@ -1,0 +1,69 @@
+# AcmeCorp Internal Knowledge Base & Operations Manual
+
+---
+
+## 1. Human Resources & Workplace Policies
+
+### 1.1 Remote Work & Hybrid Schedule
+- **Hybrid Structure:** Full-time employees are permitted to work remotely up to **3 days per week** (typically Tuesday/Thursday in-office days, subject to team manager approval).
+- **Core Working Hours:** All employees must be accessible on Slack and email during core operational hours from **10:00 AM to 4:00 PM EST**.
+- **Remote Work Stipend:** Eligible remote workers receive a one-time home office setup allowance of **$500**, claimable within the first 60 days of employment.
+
+### 1.2 Paid Time Off (PTO) & Leaves
+- **Standard PTO:** Full-time staff members accrue **20 days of paid time off per year**. PTO requests longer than 3 consecutive days must be submitted at least 2 weeks in advance.
+- **Sick Leave:** Employees receive **10 separate paid sick days annually**. A doctor’s note is required for consecutive sick leaves exceeding 3 days.
+- **Parental Leave:** Primary caregivers are eligible for **16 weeks of fully paid parental leave** after 1 year of continuous service. Secondary caregivers receive **6 weeks**.
+
+### 1.3 Code of Conduct & Anti-Harassment
+AcmeCorp enforces a zero-tolerance policy for workplace harassment, discrimination, or bullying. Any violation should be reported immediately to HR via `hr-confidential@acmecorp.com` or through the anonymous compliance hotline at **1-800-555-0199**.
+
+---
+
+## 2. IT & Cybersecurity Guidelines
+
+### 2.1 Passwords & Authentication
+- **Password Standards:** Passwords must be at least **16 characters long**, include uppercase and lowercase letters, numbers, and special symbols, and must be changed every **90 days**.
+- **Multi-Factor Authentication (MFA):** MFA is strictly mandatory across all corporate accounts using the **Okta Verify** app. SMS-based MFA is prohibited due to security vulnerabilities.
+
+### 2.2 Device Management & Security
+- **Company Hardware:** All work must be conducted on company-issued laptops. Personal devices (BYOD) are restricted to accessing web-based email and Slack only.
+- **Disk Encryption:** Hard disk encryption (FileVault for macOS, BitLocker for Windows) must remain enabled at all times.
+- **Software Installations:** Employees cannot install unauthorized third-party software without approval from the IT Security team. Open a ticket via the **IT Service Desk portal**.
+
+### 2.3 IT Support Desk & Escalation
+- **Portal:** Submit IT tickets at `https://service.acmecorp.internal`.
+- **Emergency Hotline:** For critical production outages or lost devices, call the 24/7 IT Urgent Response desk at **extension 4357 (HELP)**.
+
+---
+
+## 3. Finance & Expense Management
+
+### 3.1 Travel & Reimbursements
+- **Submission Window:** All business travel expenses, receipts, and mileage must be submitted via **Concur within 14 calendar days** following the end of the trip.
+- **Airfare Policy:** Employees must book economy class for domestic flights under 6 hours. Business class is permitted for international flights exceeding 8 hours.
+- **Daily Meals Allowance (Per Diem):** The maximum allowable daily meal expenditure during business travel is **$75 per day** (Breakfast: $15, Lunch: $20, Dinner: $40). Receipts are required for any single expense over $25.
+
+### 3.2 Corporate Credit Cards
+Corporate cards are issued exclusively to department leads and frequent business travelers. Monthly statement reconciliations must be completed by the **5th of every month**. Unreconciled charges will result in card suspension.
+
+---
+
+## 4. Engineering Practices & Incident Management
+
+### 4.1 Deployment & Code Reviews
+- **Pull Request (PR) Policy:** Every code submission requires approval from at least **two senior peer reviewers** before merging into the `main` branch.
+- **CI/CD Pipeline:** Automated unit test coverage must be at least **85%** for a build to pass staging verification.
+- **Deployment Windows:** Production deployments are scheduled strictly between **Monday and Thursday, 9:00 AM to 12:00 PM EST**. Deployments on Fridays or weekends are strictly prohibited except for critical hotfixes.
+
+### 4.2 Production Incident Severity Levels
+- **Severity 1 (Critical):** Major service outage impacting >25% of users. **Target SLA Resolution Time: 1 hour.** On-call primary engineer paged immediately.
+- **Severity 2 (High):** Degraded feature performance with a workaround. **Target SLA Resolution Time: 4 hours.**
+- **Severity 3 (Low):** Minor cosmetic bug or non-essential feature failure. **Target SLA Resolution Time: 48 hours.**
+
+---
+
+## 5. Q3 Company Goals & Strategic Initiatives
+
+1. **Cloud Migration:** Complete the migration of legacy on-premise relational databases to AWS Aurora PostgreSQL by November 15.
+2. **ISO 27001 Certification:** Achieve full compliance and pass external audit for ISO 27001 security standards.
+3. **Customer Satisfaction:** Improve the Net Promoter Score (NPS) from **42 to 55** by accelerating customer support response times.
